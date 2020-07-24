@@ -10,20 +10,23 @@
 }
 
 body {
-    background: var(--dark-blue-main);
+    /* background: var(--dark-blue-main); */
+    background: #181e2a;
     color: var(--light);
     font-family: var(--open-sans);
     margin: 0;
 }
 
 .header {
-    margin:  0 -1em;
+    
+    background-color: #1b2330;
 }
 .header-grid {
     display: grid;
     grid-template-columns: auto 1fr;
     height: 100px;
     align-items: center;
+    margin:  0 -1em;
 }
 .menu {
     display: flex;
@@ -50,6 +53,15 @@ img {
 }
 .hero {
     text-align: center;
+    background-image: url("images/bg-curvy-mobile.svg"), linear-gradient(to top, #181f2b 0%, #181f2b  230px,#1b2330 230px, #1b2330 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom 230px, center;
+}
+
+.hero-grid {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -97,10 +109,11 @@ h1 {
 
 .productive {
     margin-top: 10em;
-    margin: 0 -15px;
     margin-bottom: 10em;
 }
-
+.productive-grid {
+    margin: 0 -15px;
+}
 .productive h2 {
     font-size: 1.3em;
 }
@@ -110,6 +123,8 @@ h1 {
     border-bottom: 1px solid #63dcd8;
     text-decoration: none;
     padding-bottom: .5em;
+    padding-right: 25px;
+    background: url("/images/icon-arrow.svg") no-repeat right bottom 6px;
 }
 .reviews-grid {
     display: grid;
@@ -179,6 +194,10 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
     .button {
         max-width: 300px;
     }
